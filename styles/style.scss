@@ -1,0 +1,219 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+
+header {
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 100px;
+        color: white;
+        text-shadow: rgba(2, 2, 2, 0.566) 1px 0 10px;
+       
+    }
+   
+}
+
+
+
+form {
+    width: 50%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+    
+    label{
+        width: 25%;
+        height: 50px;
+        text-align: center;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        margin-right: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 13px -7px #000000, 0px 0px 25px 7px rgba(0,0,0,0.30);
+    }
+
+
+
+    input{
+        height: 50px;
+        width: 50%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        box-shadow: 0px 10px 13px -7px #000000, 0px 0px 25px 7px rgba(0,0,0,0.30);
+      
+}
+    }
+
+    #label-btn {
+        cursor: pointer;
+        font-size: 1.2rem;
+        background: rgba(0, 149, 255, 0.877);
+        height: 50px;
+        margin-left: 10px;
+        border: none;
+        padding: 0 15px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 13px -7px #000000, 0px 0px 25px 7px rgba(0,0,0,0.30);
+
+        &:hover{
+            background: rgb(91, 206, 4);
+            transition: background 0.4s linear;
+        }
+    }
+
+
+
+    #send-btn{
+        display: none;
+
+
+
+
+    }
+
+
+
+li {
+    width: 45%;
+    height: 50px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 25px 7px rgba(0,0,0,0.20);
+
+    .todo-content {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        padding-left: 15px;
+
+
+    }
+
+    .todo-task:hover{
+        color: red;
+        font-weight: 700;
+        transition: color 0.4s linear;
+    }
+
+
+    .content-cross {
+        text-decoration: line-through;
+
+    }
+
+
+    .todo-delete {
+        display: flex;
+        height: 100%;
+        
+        .btn-supp {
+            font-size: 1.2rem;
+            cursor: pointer;
+            background: #af0000d9;
+            color: white;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            padding: 0 20px;
+        }
+    }
+
+}   
+
+@media screen and (max-width: 1024px) {
+
+    form {
+        width: 75%;
+        height: 100%;
+        flex-direction: column;
+
+        label {
+            padding: 15px 30px;
+            margin-bottom: 20px;
+        }
+
+        #label-btn{
+            width: 30%;
+        }
+
+        input {
+            width: 75%;
+            margin-bottom: 20px;
+        }
+
+    }
+
+
+    .todo-list {
+        li{
+            width: 55%;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 620px) {
+
+    form {
+        width: 80%;
+        margin-top: 0;
+
+
+        label {
+            width: 40%;
+        }
+
+        input {
+            width: 90%;
+        }
+
+
+    }
+
+    .todo-list {
+        li {
+            width: 80%
+
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    form{
+
+        label {
+            width: 60%;
+        }
+    }
+
+
+}
